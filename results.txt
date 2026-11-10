@@ -1,0 +1,10 @@
+5 runs, OpenSSL 4.0.2 25 Aug 2026, Python 3.13.18
+SHA-256 of 1 MiB image: 0.56 ms
+RSA-3072 + ML-DSA-65 check incl. hash: 0.88 ms
+scheme                pk bytes  sig bytes  verify ms
+RSA-3072                   384        384       0.04
+ECDSA P-256                 64         64       0.06
+ML-DSA-44                 1312       2420       0.09
+ML-DSA-65                 1952       3309       0.13
+ML-DSA-87                 2592       4627       0.21
+acceptance checks consistent across runs: True {'both signatures valid': True, 'post-quantum signature altered': False, 'classical signature altered': False, 'image altered': False, 'LMS valid': True, 'LMS altered': False}
