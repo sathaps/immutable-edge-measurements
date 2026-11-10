@@ -1,0 +1,57 @@
+{
+ "openssl": "OpenSSL 4.0.2 25 Aug 2026",
+ "python": "3.13.18",
+ "machine": "x86_64",
+ "processor": "x86_64",
+ "sha256_1MiB_us": 559.201,
+ "rows": [
+  {
+   "scheme": "RSA-3072",
+   "pk_bytes": 384,
+   "sig_bytes": 384,
+   "verify_us": 36.6085
+  },
+  {
+   "scheme": "ECDSA P-256",
+   "pk_bytes": 64,
+   "sig_bytes": 64,
+   "sig_der_bytes": 71,
+   "verify_us": 59.635
+  },
+  {
+   "scheme": "ML-DSA-44",
+   "pk_bytes": 1312,
+   "sig_bytes": 2420,
+   "verify_us": 83.573
+  },
+  {
+   "scheme": "ML-DSA-65",
+   "pk_bytes": 1952,
+   "sig_bytes": 3309,
+   "verify_us": 131.544
+  },
+  {
+   "scheme": "ML-DSA-87",
+   "pk_bytes": 2592,
+   "sig_bytes": 4627,
+   "verify_us": 206.522
+  },
+  {
+   "scheme": "LMS SHA256 H10/W4",
+   "pk_bytes": 56,
+   "sig_bytes": 2508,
+   "signatures_per_key": 1024,
+   "verify_sha256_blocks_median": 567.0,
+   "verify_sha256_blocks_max": 627
+  }
+ ],
+ "acceptance_checks": {
+  "both signatures valid": true,
+  "post-quantum signature altered": false,
+  "classical signature altered": false,
+  "image altered": false,
+  "LMS valid": true,
+  "LMS altered": false
+ },
+ "dual_check_rsa3072_mldsa65_incl_hash_us": 704.617
+}
