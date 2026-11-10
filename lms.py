@@ -13,8 +13,8 @@ import os
 import struct
 
 N, W, P, LS, H = 32, 4, 67, 4, 10
-LMOTS_TYPE = 4      # LMOTS_SHA256_N32_W4
-LMS_TYPE = 6        # LMS_SHA256_M32_H10
+LMOTS_TYPE = 3      # LMOTS_SHA256_N32_W4 (RFC 8554, Table 4)
+LMS_TYPE = 6        # LMS_SHA256_M32_H10 (RFC 8554, Table 5)
 D_PBLC, D_MESG, D_LEAF, D_INTR = 0x8080, 0x8181, 0x8282, 0x8383
 
 
